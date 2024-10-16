@@ -1,0 +1,3 @@
+#lang racket
+(define (par?  numero)
+  (= 0 (remainder numero 2)))

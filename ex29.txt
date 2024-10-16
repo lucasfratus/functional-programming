@@ -1,0 +1,12 @@
+Ordem Aplicativa
+Em ordem aplicativa, o interpretador avalia os argumentos e, em seguida, realiza as aplicações.
+- Primeiramente, test será avaliado, retornando o procedimento associado a ele. 
+- Após isso, ele avalia o primeiro operando, que é o 0, e retorna 0.
+- Em seguida, ele avalia o segundo operando, que é o p. Porém, a avaliação de p leva de volta a definição de p((define (p) (p))). Dessa forma, (p) se 
+autorreferencia, entrando em um loop infinito, já que ele continua tentando avaliar o p.
+
+Ordem Normal
+Em ordem normal, o interpretador não avalia p até que exista a necessidade.
+- Primeiramente ele avalia o test.
+- Após isso, ele aplica o procedimento test com 0 como primeiro operando e (p) como segundo. Portanto, ele não avalia imediatamente o (p)
+- Se o test não requer a avaliação do segundo argumento (p) para produzir um resultado, o interpretador pode retornar um valor sem avaliar (p).

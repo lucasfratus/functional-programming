@@ -1,0 +1,3 @@
+#lang racket
+(define (tres-digitos? numero)
+    (equal? (string-length (number->string numero)) 3))

@@ -1,0 +1,2 @@
+Caso b seja um número maior que zero, o predicado "+" sera True(#t) e a expressão será (+ a b). Se não (caso b seja menor ou igual a zero),
+a expressão será (- a b).

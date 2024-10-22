@@ -1,9 +1,13 @@
 #lang racket
 (require examples)
+;; 
 ;; String -> Número
 ;;
-;; Transforma uma String composta de "a"s e "b"s em um número binário. A letra "a" é substituida pelo número "0", enquanto
-;; a letra "b" é substituida pelo número "1". A entrada deve ser exclusivamente composta pelas letras "a" e "b"
+;; Transforma uma String composta de "a"s e "b"s em um número inteiro.
+;; A letra "a" é substituida pelo número "0", enquanto  a letra "b" é substituida pelo número "1". 
+;; Após isso, a string convertida, que está no formato de número binário, será transformada em um número inteiro.
+;; A String de entrada deve ser exclusivamente composta pelas letras "a" e "b".
+;;
 
 (examples
  (check-equal? (ab->number "a") 0)

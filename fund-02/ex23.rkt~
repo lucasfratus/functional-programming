@@ -1,3 +1,0 @@
-#lang racket
-(define (exclamacao frase numero_exclamacoes)
-    (string-append (make-string #\!)))

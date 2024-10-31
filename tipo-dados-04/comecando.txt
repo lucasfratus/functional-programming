@@ -1,0 +1,55 @@
+1) O que é um tipo de dado?
+
+R: 
+Um tipo de dado é um conjunto de valores que uma variável pode assumir.
+
+
+2) Qual é o propósito da etapa de definição de tipos de dados no processo de projeto de funções?
+
+R:
+Durante a etapa de definição de tipos de dados identificamos as informações e definimos como
+elas são representadas no programa.
+
+
+3) Quais são os princípios que podemos utilizar para determinar se um tipo de dado é adequado para
+representar uma informação?
+
+R:
+Diretrizes para projeto de tipos de dados:
+• Faça os valores válidos representáveis.
+• Faça os valores inválidos irrepresentáveis.
+
+
+4) Quando devemos utilizar estruturas para representar informações?
+
+R:
+Devemos utilizar estruturas quando os tipos de dados não são atômicos,ou seja, podem ser decompostos.
+
+
+5) Como são chamadas as funções utilizadas para criar instâncias de estruturas?
+
+R:
+O construtor, o predicado de tipo e os seletores criados por struct são funções
+comuns, e portando são utilizados como todas as outras funções.
+
+6) Como são chamadas as funções utilizadas para obter os valores dos campos de instâncias de estruturas?
+R:
+Em Racket, as funções utilizadas para obter os valores dos campos de instâncias de estruturas são chamadas de acessores.
+
+
+7) O que a palavra chave #:transparent faz quando utilizada na declaração de uma estrutura?
+R:
+Transforma a estrutura em uma estrutura "transparente", ou seja, podemos ver os valores dos campos dela.
+
+
+8) Como modificar o valor de um campo de uma instância de uma estrutura? Explique.
+R:
+Em Racket, os campos de uma estrutura são imutáveis por padrão, o que significa que, uma vez definidos, não podem ser alterados diretamente. No entanto, é possível criar uma nova instância da estrutura com o campo modificado, usando o struct-copy.
+
+9) Quando devemos utilizar enumerações para representar informações?
+R:
+As enumerações (ou enums) são úteis em situações onde você deseja representar um conjunto fixo e limitado de valores que representam estados ou categorias relacionadas de forma clara e significativa. Utilizá-las pode melhorar a legibilidade, reduzir erros, e simplificar o processo de verificação de valores em um programa.
+
+10) Qual é o propósito de criar enumerações em Racket já que as enumerações não são suportadas?
+R: 
+Embora Racket não tenha um tipo nativo de enumerações, criar um conjunto fixo de valores simbólicos pode ajudar a atingir os mesmos propósitos das enumerações encontradas em outras linguagens. Apesar da falta de suporte nativo a enumerações, as listas de símbolos em Racket podem ser usadas para alcançar muitos dos mesmos benefícios. Isso contribui para um código mais robusto, com menor risco de erro e uma semântica mais clara e controlada em relação aos valores aceitos.

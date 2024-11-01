@@ -53,3 +53,23 @@ As enumerações (ou enums) são úteis em situações onde você deseja represe
 10) Qual é o propósito de criar enumerações em Racket já que as enumerações não são suportadas?
 R: 
 Embora Racket não tenha um tipo nativo de enumerações, criar um conjunto fixo de valores simbólicos pode ajudar a atingir os mesmos propósitos das enumerações encontradas em outras linguagens. Apesar da falta de suporte nativo a enumerações, as listas de símbolos em Racket podem ser usadas para alcançar muitos dos mesmos benefícios. Isso contribui para um código mais robusto, com menor risco de erro e uma semântica mais clara e controlada em relação aos valores aceitos.
+
+11) De que forma enumerações e uniões como entrada para funções guiam a criação dos exemplos e a
+implementação da função?
+R:
+Enumerações e uniões em Racket orientam a criação de exemplos e a implementação de funções aoefinir o conjunto de entradas possíveis.
+
+- Enumerações: Como representam uma lista finita de valores, os exemplos devem cobrir cada valor da lista. A implementação usa cond ou match para lidar com cada caso específico.
+
+- Uniões: Permitem múltiplos tipos ou formatos de entrada, exigindo exemplos para cada tipo. A implementação usa cond, match, ou type-case para tratar cada tipo de forma adequada.
+
+Essas estruturas ajudam a garantir que todos os cenários previstos sejam tratados e testados.
+
+12) Quando devemos utilizar uniões para representar informações?
+Devemos usar uniões para representar informações quando os dados podem assumir diferentes tipos ou formas relacionados, mas representam um conceito único. Isso é útil para:
+
+- Aceitar diferentes tipos de entrada,
+- Representar variações de uma entidade,
+- Manter flexibilidade ao lidar com tipos relacionados.
+
+Uniões organizam o tratamento de dados variados, tornando o código mais flexível e eficiente.

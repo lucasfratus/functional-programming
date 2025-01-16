@@ -12,6 +12,6 @@
  (check-equal? (todos-verdadeiros? '(#t)) #t))
 
 (define (todos-verdadeiros? lst)
-  (foldr (λ (b acumulador) (and b acumulador)) #t lst))
+  (foldl (λ (b acumulador) (and b acumulador)) #t lst))
 
 

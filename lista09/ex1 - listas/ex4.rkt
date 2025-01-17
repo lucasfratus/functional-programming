@@ -9,3 +9,6 @@
 
 (define (strings-para-numeros lst)
   (foldl (λ (string acumulador) (cons (string->number string) acumulador)) '() lst))
+
+;; O acumulador é responsável por construir a lista de números. Ele mantém os números convertidos a partir de strings
+;; até aquele momento.

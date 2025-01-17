@@ -10,5 +10,7 @@
     (check-equal? (inverter-lista '(2 2)) '(2 2)))
 
 (define (inverter-lista lst)
-  (foldl (lambda (x acumulador) (cons x acumulador)) '() lst))
+  (foldl (λ (x acumulador) (cons x acumulador)) '() lst))
 
+;; O acumulador, na função inverter-lista, é responsável por acumular os elementos de maneira invertida, à medida
+;; que o foldl percorre a lista A. 

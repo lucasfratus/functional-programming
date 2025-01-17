@@ -15,3 +15,5 @@
   (foldl (λ (b acumulador) (and b acumulador)) #t lst))
 
 
+;; O acumulador é responsável por manter o resultado parcial da operação "and" entre todos os elementos processados
+;; até aquele momento.

@@ -4,11 +4,11 @@
 (define (reduz-num-acc f base n)
   (define (iter i acc)
     (cond
-      [(> i n) acc]  ; Quando i for maior que n, retornamos o acumulador
-      [else (iter (+ i 1) (f acc))]))  ; Aplica a operação f no acumulador
-  (iter 1 base))  ; Começa de 1 com o valor base
+      [(> i n) acc] 
+      [else (iter (+ i 1) (f acc))]))  
+  (iter 1 base))  
 
-
+;; Recebe como entrada um numero a(diferente de 0) e um numero natural n e calcula a^n
 (examples
 (check-equal? (potencia 4 2) 16)
 (check-equal? (potencia 2 2) 4)
@@ -16,4 +16,4 @@
 )
 
 (define (potencia a n)
-  (reduz-num-acc (lambda (acc) (* acc a)) 1 n))
+  (reduz-num-acc (λ (acc) (* acc a)) 1 n))

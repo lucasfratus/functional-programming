@@ -1,5 +1,6 @@
 #lang racket
 (require examples)
+
 ;; Concatena as strings de uma lista de strings
 (examples
  (check-equal? (concat-strings '()) "")
@@ -11,4 +12,5 @@
 (define (concat-strings lst)
   (foldl string-append "" lst))
 
-;; O acumulador mantém a concatenação de strings, além da utilização do 'foldl' eliminar a necessidade de implementar a recursão de forma manual.
+;; O acumulador mantém a concatenação de strings, além da utilização do 'foldl' eliminar a necessidade de 
+;; implementar a recursão de forma manual.

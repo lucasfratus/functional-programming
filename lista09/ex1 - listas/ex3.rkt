@@ -1,5 +1,6 @@
 #lang racket
 (require examples)
+
 ;; Determine a quantidade de elementos presentes em uma lista, ignorando o primeiro elemento.
 (examples
  (check-equal? (conta-ignora-primeiro '(1 2 3 4 5)) 4)

@@ -9,4 +9,10 @@
  (check-equal? (remove-nulos '(1 2 3)) '(1 2 3)))
 
 (define (remove-nulos lst)
-  (filter (λ (x) (not (= x 0))) lst))
+  (foldl (λ (x acumulador) 
+           (if (= x 0)
+               acumulador (cons x acumulador))) 
+         '() lst))
+
+;; O acumulador em remove-nulos tem a função de contruir a nova lista(sem os nulos). Os elementos que não
+;; sao 0 sao adicionados ao acumulador.

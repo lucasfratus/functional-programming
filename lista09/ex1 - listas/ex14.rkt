@@ -9,7 +9,7 @@
 
 (define (amplitude lst)
   (foldl
-   (lambda (x acumulador)
+   (λ (x acumulador)
      (list (min x (first acumulador)) (max x (second acumulador))))  
    (list (car lst) (car lst))  
    lst))

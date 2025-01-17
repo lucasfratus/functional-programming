@@ -14,8 +14,7 @@
 (examples
 (check-equal? (verificar-perfeito 6) #t)
 (check-equal? (verificar-perfeito 10) #f)
-(check-equal? (verificar-perfeito 28) #t)
-)
+(check-equal? (verificar-perfeito 28) #t))
 
 (define (verificar-perfeito x)
   (define (soma-divisores acc i)

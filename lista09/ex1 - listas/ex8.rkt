@@ -13,6 +13,7 @@
  (check-equal? (algum-verdadeiro? '(#t)) #t))
 
 (define (algum-verdadeiro? lst)
-  (foldr (λ (b acumulador) (or b acumulador)) #f lst))
+  (foldl (λ (b acumulador) (or b acumulador)) #f lst))
 
-
+;; O acumulador é responsável por manter o resultado parcial da operação "or" entre todos os elementos processados
+;; até aquele momento.
